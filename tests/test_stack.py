@@ -6,10 +6,7 @@ stack = Stack()
 
 
 class TestStack(unittest.TestCase):
-    def test_push(self):
+    def test_stack(self):
         self.assertEqual(stack.push('data'), None)
-
-    def test_pop(self):
         stack.push('data')
         self.assertEqual(stack.pop(), 'data')
-
